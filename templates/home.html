@@ -1,6 +1,18 @@
-<h1>Hello World!</h1>
+{% extends "_base.html" %}
 
+{% block content %}
+<h1>Расчет заработной платы в Казахстане 2020</h1><br>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Оклад </button>
+  <button type="button" class="btn btn-secondary">Обратный</button>
+</div><br><br>
+<div class="form-group">
 <form action="add">
-	Введите ваш оклад: <input type="text" name="salary"><br>
-	<input type="submit">
+	Введите ваш оклад: <input type="text" name="salary"><br><br>
+	<input class="btn btn-success" type="submit" value="Рассчет">
 </form>
+
+<h6>Информация о рассчете зарплаты в Казахстане взята из сайта egov. Если вам нужно больше информаций можете почитать <a target="_blank" href="https://egov.kz/cms/ru/articles/calculate_net_income">здесь.</a></h6>
+
+</div>
+{% endblock content %}

@@ -8,4 +8,4 @@ def add(request):
 	pension = val1*0.1
 	tax = (val1-(val1*0.1)-42500)*0.1
 	sum1 = val1-(val1*0.1)-tax
-	return render(request, "result.html", {'result': pension, 'result2': tax, 'result3': sum1})
+	return render(request, "result.html", {'result': pension, 'result2': tax, 'result3': sum1,})
